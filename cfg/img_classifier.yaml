@@ -2,8 +2,8 @@ seed: 42
 num_gpus: 1
 trainer:
   name: jax_trainer.trainer.ImgClassifierTrainer
-  train_epochs: 5
-  check_val_every_n_epoch: 1
+  train_epochs: 100
+  check_val_every_n_epoch: 10
   debug: False
   enable_progress_bar: True
   tabulate_model: True
@@ -24,7 +24,6 @@ trainer:
     ConfusionMatrixCallback:
       normalize: True
       cmap: Blues
-      every_n_epochs: 2
     LearningRateMonitor:
       every_n_epochs: 1
 model:

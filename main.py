@@ -6,10 +6,9 @@ import numpy as np
 import pytorch_lightning as pl
 import torch
 from absl import app
-from ml_collections import ConfigDict, config_flags
-
 from jax_trainer.datasets import build_dataset_module
 from jax_trainer.utils import resolve_import_from_string
+from ml_collections import ConfigDict, config_flags
 
 _CONFIG_FILE = config_flags.DEFINE_config_file("cfg", default="cfg/default_config.py")
 
