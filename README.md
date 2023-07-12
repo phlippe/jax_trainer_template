@@ -45,3 +45,16 @@ To implement your own experiment, you can follow the following steps:
 3. If you want to train a new task, create a trainer module in the `experiments` folder. If needed, you can also create a new callback or logging function.
 4. Create a new config in the `cfg` folder, e.g. `cfg/my_config.yaml`, and specify the dataset, model, and trainer to use.
 5. Run the experiment with `python main.py --cfg cfg/default_config.py:my_config`.
+
+## Contributing
+
+Contributions are welcome! Before contributing code, please install the pre-commit hooks with:
+
+```bash
+pip install pre-commit
+pre-commit install
+```
+
+This will run the linter and formatter on every commit.
+
+If you have any questions, feel free to open an issue or contact me directly.
