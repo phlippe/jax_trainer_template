@@ -47,8 +47,9 @@ model:
 optimizer:
   name: adam
   lr: 1e-3
-  weight_decay: 0
-  gradient_clip_norm: 10.0
+  transforms:
+    weight_decay: 0
+    gradient_clip_norm: 10.0
   scheduler:
     name: warmup_cosine_decay
     warmup_steps: 100
